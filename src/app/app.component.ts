@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  isOpen = false;
   title = 'overlay-example';
+
+  showOverlay(){
+    this.isOpen = true;
+  }
+
+  close(){
+    this.isOpen = false;
+  }
 }
